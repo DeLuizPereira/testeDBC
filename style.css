@@ -36,7 +36,6 @@ nav {
 }
 .nav-list li {
   letter-spacing: 3px;
-  margin-left: 32px;
 }
 .navList {
   display: flex;
@@ -104,15 +103,92 @@ nav {
   font-weight: bold;
   height: 4vh;
 }
-.inputAccount {
-  border: none;
-  border-bottom: 1px solid grey;
-  height: 4vh;
-}
 @media screen and (max-width: 800px) {
   nav {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
   }
+}
+.accordion {
+  color: #FFF;
+  background-color: green;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '+';
+  font-size: 13px;
+  color: #eee;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-";
+}
+.inputCnpj {
+  display: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  height: 4vh;
+}
+.inputCpf {
+  border: none;
+  border-bottom: 1px solid grey;
+  height: 4vh;
+}
+.container {
+  display: flex;
+  width: 1200px;
+  margin: 40px auto;
+}
+.titleh1 {
+  max-width: 33%;
+  margin-top: 15vh;
+  color: grey;
+  font-size: 22pt;
+}
+.titleh1 p {
+  margin-top: 40px;
+  color: grey;
+  font-size: 10pt;
+}
+.banner1 {
+  width: 33%;
+  max-width: 33%;
+}
+.banner1 img {
+  width: 340px;
+}
+.forYou {
+  color: green;
+}
+.links {
+  max-width: 33%;
+  margin-left: auto;
+}
+.links ul {
+  list-style: none;
+}
+.links ul li {
+  padding-bottom: 10px;
+  font-size: 10pt;
+}
+.links a {
+  color: grey;
+}
+.links h3 {
+  color: green;
+  margin-bottom: 30px;
 }

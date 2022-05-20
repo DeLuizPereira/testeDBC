@@ -16,8 +16,8 @@
             <option value="CPF">CNPJ</option>
           </select>
           <form action="#" method="post" class="formCpf">
-            <label></label>
-            <input type="text" class="inputAccount" name="account" placeholder="CPF">
+            <input type="text" class="inputCpf" name="account" placeholder="CPF">
+            <input type="text" class="inputCnpj" name="account" placeholder="CNPJ">
           </form>
           <a href="#" class="buttonArrow"><img src="right-arrow.png"></a>
         </div>
@@ -34,14 +34,42 @@
           <div class="line3"></div>
         </div>
         <ul class="navList">
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
+          <li><button class="accordion">Acesso Rápido</button>
+            <div class="panel">
+              <a href="#">Lorem ipsum.</a>
+            </div></li>
+          <li> <button class="accordion">Para Você</button>
+            <div class="panel">
+              <a href="#">Lorem ipsum.</a>
+            </div></li>
+          <li><button class="accordion">Para Empresa</button>
+            <div class="panel">
+              <a href="#">Lorem ipsum.</a>
+            </div></li>
         </ul>
       </div>
     </nav>
   </header>
-  <main></main>
+  <main class="container">
+    <section class="titleh1">
+    <h1>Nós temos as melhores oportunidades <span class="forYou">para você!</span></h1>
+    <p>Somos o parceiro ideal para te acompanhar nessa jornada. De forma resposável e transparente vamos juntos!</p>
+    </section>
+    <section class="banner1">
+      <img src="maninsuit.jpg">
+    </section>
+    <section class="links">
+      <h3>Para você</h3>
+      <ul>
+      <li><a href="#">Lorem ipsum</a></li>
+      <li><a href="#">Lorem ipsum</a></li>
+      <li><a href="#">Lorem ipsum</a></li>
+      <li><a href="#">Lorem ipsum</a></li>
+      <li><a href="#">Lorem ipsum</a></li>
+      </ul>
+    </section>
+  </main>
   <script src="navbar.js"></script>
+  <script src="accordion.js"></script>
 </body>
 </html>
